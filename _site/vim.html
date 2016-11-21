@@ -1,0 +1,352 @@
+<p>使用 <strong>Vim</strong> 的时间不长，但如今已经离不开熟悉的 <strong>Vim</strong> 编辑模式了。 <strong>Vim</strong> 的学习曲线是非常陡的，一开始学习的时候，面对很多的操作命令要去记住，常常望而却步。</p>
+
+<p>其实，只要记住一些常用的命令，加之在工作中坚持使用 <strong>Vim</strong> 进行编辑，很快就能得心应手了。</p>
+
+<p>###光标移动(Cursor Movement)
+&lt;table width="100%"&gt;
+	&lt;tbody &gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释）&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">h,j,k,l</code>&lt;/td&gt;
+			&lt;td&gt;<code class="v-code">h</code>表示往左，<code class="v-code">j</code>表示往下，<code class="v-code">k</code>表示往右，<code class="v-code">l</code>表示往上&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">Ctrl</code>+<code class="v-code">f</code>&lt;/td&gt;
+			&lt;td&gt;上一页&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">Ctrl</code>+<code class="v-code">b</code>&lt;/td&gt;
+			&lt;td&gt;下一页&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">w</code>, <code class="v-code">e</code>, <code class="v-code">W</code>, <code class="v-code">E</code>&lt;/td&gt;
+			&lt;td&gt;跳到单词的后面，小写包括标点&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">b</code>, <code class="v-code">B</code>&lt;/td&gt;
+			&lt;td&gt;以单词为单位往前跳动光标，小写包含标点&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">O</code>&lt;/td&gt;
+			&lt;td&gt;开启新的一行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">^</code>&lt;/td&gt;
+			&lt;td&gt;一行的开始&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">$</code>&lt;/td&gt;
+			&lt;td&gt;一行的结尾&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">gg</code>&lt;/td&gt;
+			&lt;td&gt;文档的第一行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;<code class="v-code">[N]G</code>&lt;/td&gt;
+			&lt;td&gt;文档的第N行或者最后一行&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###插入模式(Insert Mode)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">i</code>
+			&lt;/td&gt;
+			&lt;td&gt;插入到光标前面&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">I</code>
+			&lt;/td&gt;
+			&lt;td&gt;插入到行的开始位置&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">a</code>
+			&lt;/td&gt;
+			&lt;td&gt;插入到光标的后面&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">A</code>
+			&lt;/td&gt;
+			&lt;td&gt;插入到行的最后位置&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">o</code>, <code class="v-code">O</code>
+			&lt;/td&gt;
+			&lt;td&gt;新开一行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">Esc</code>
+			&lt;/td&gt;
+			&lt;td&gt;关闭插入模式&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###编辑(Editing)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释）&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">r</code>
+			&lt;/td&gt;
+			&lt;td&gt;在插入模式替换光标所在的一个字符&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">J</code>
+			&lt;/td&gt;
+			&lt;td&gt;合并下一行到上一行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">s</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除光标所在的一个字符, 光标还在当行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">S</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除光标所在的一行，光标还在当行，不同于<code class="v-code">dd</code>&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">u</code>
+			&lt;/td&gt;
+			&lt;td&gt;撤销上一步操作&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">ctrl</code>+<code class="v-code">r</code>
+			&lt;/td&gt;
+			&lt;td&gt;恢复上一步操作&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">.</code>
+			&lt;/td&gt;
+			&lt;td&gt;重复最后一个命令&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">~</code>
+			&lt;/td&gt;
+			&lt;td&gt;变换为大写&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">[N]&gt;&gt;</code>
+			&lt;/td&gt;
+			&lt;td&gt;一行或N行往右移动一个tab&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">[N]&lt;&lt;</code>
+			&lt;/td&gt;
+			&lt;td&gt;一行或N行往左移动一个tab&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###关闭(Exiting)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:w</code>
+			&lt;/td&gt;
+			&lt;td&gt;保存&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:wq</code>,
+				<code class="v-code">:x</code>
+			&lt;/td&gt;
+			&lt;td&gt;保存并关闭&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:q</code>
+			&lt;/td&gt;
+			&lt;td&gt;关闭（已保存）&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:q!</code>
+			&lt;/td&gt;
+			&lt;td&gt;强制关闭&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###搜索(Search)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">/pattern</code>
+			&lt;/td&gt;
+			&lt;td&gt;搜索（非插入模式)&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">?pattern</code>
+			&lt;/td&gt;
+			&lt;td&gt;往后搜索&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">n</code>
+			&lt;/td&gt;
+			&lt;td&gt;光标到达搜索结果的前一个目标&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">N</code>
+			&lt;/td&gt;
+			&lt;td&gt;光标到达搜索结果的后一个目标&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###视觉模式(Visual Mode)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">v</code>
+			&lt;/td&gt;
+			&lt;td&gt;选中一个或多个字符&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">V</code>
+			&lt;/td&gt;
+			&lt;td&gt;选中一行&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###剪切和复制(Cut and Paste)
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;	
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">dd</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除一行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">dw</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除一个单词&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">x</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除后一个字符&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">X</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除前一个字符&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">D</code>
+			&lt;/td&gt;
+			&lt;td&gt;删除一行最后一个字符&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">[N]yy</code>
+			&lt;/td&gt;
+			&lt;td&gt;复制一行或者N行&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">yw</code>
+			&lt;/td&gt;
+			&lt;td&gt;复制一个单词&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">p</code>
+			&lt;/td&gt;
+			&lt;td&gt;粘贴&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
+
+<p>###窗口操作
+&lt;table width="100%"&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th width="20%"&gt;命令&lt;/th&gt;
+			&lt;th width="80%"&gt;作用（解释)&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:split</code>
+			&lt;/td&gt;
+			&lt;td&gt;水平方向分割出一个窗口&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:vsplit</code>
+			&lt;/td&gt;
+			&lt;td&gt;垂直方向分割出一个窗口&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">:close</code>
+			&lt;/td&gt;
+			&lt;td&gt;关闭窗口&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				<code class="v-code">Ctrl</code>+<code class="v-code">W</code>
+			&lt;/td&gt;
+			&lt;td&gt;切换窗口, <code class="v-code">h</code>到左边窗口，<code class="v-code">j</code>到下方窗口，<code class="v-code">k</code>到上方窗口，<code class="v-code">l</code>到右边窗口&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</p>
