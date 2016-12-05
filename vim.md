@@ -10,6 +10,7 @@ keywords: Vim, command, 常用命令
 其实，只要记住一些常用的命令，加之在工作中坚持使用 <strong>Vim</strong> 进行编辑，很快就能得心应手了。
 
 ###光标移动(Cursor Movement)
+
 <table width="100%">
 	<tbody >
 		<tr>
@@ -60,6 +61,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###插入模式(Insert Mode)
+
 <table width="100%">
 	<tbody>
 		<tr>
@@ -106,6 +108,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###编辑(Editing)
+
 <table width="100%">
 	<tbody>
 		<tr>
@@ -176,6 +179,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###关闭(Exiting)
+
 <table width="100%">
 	<tbody>
 		<tr>
@@ -211,6 +215,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###搜索(Search)
+
 <table width="100%">
 	<tbody>
 		<tr>
@@ -245,6 +250,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###视觉模式(Visual Mode)
+
 <table width="100%">
 	<tbody>
 		<tr>
@@ -267,6 +273,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###剪切和复制(Cut and Paste)
+
 <table width="100%">
 	<tbody>
 		<tr>	
@@ -325,6 +332,7 @@ keywords: Vim, command, 常用命令
 </table>
 
 ###窗口操作
+
 <table width="100%">
 	<tbody>
 		<tr>
