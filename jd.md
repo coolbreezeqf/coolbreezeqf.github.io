@@ -10,10 +10,37 @@ keywords: 简历
 
 ## 个人简介：
 
-| 姓名| 朱会振 | 性别| 男| 民族| 汉族|
-|:--  | :--:   | :---  |:----:|:--- | :---:  |
-| **出生年月**|1994.04.30 | **联系电话** | 13758251646  |**专业**|软件工程|
-| **毕业院校**|浙江科技学院 | **求职意向** | 软件开发工程师  |**邮箱**|colbrze430@gmail|
+<table>
+<thead>
+<tr>
+<th style="text-align: left">姓名</th>
+<th style="text-align: center">朱会振</th>
+<th style="text-align: left">性别</th>
+<th style="text-align: center">男</th>
+<th style="text-align: left">民族</th>
+<th style="text-align: center">汉族</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: left"><strong>出生年月</strong></td>
+<td style="text-align: center">1994.04.30</td>
+<td style="text-align: left"><strong>联系电话</strong></td>
+<td style="text-align: center">13758251646</td>
+<td style="text-align: left"><strong>专业</strong></td>
+<td style="text-align: center">软件工程</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>毕业院校</strong></td>
+<td style="text-align: center">浙江科技学院</td>
+<td style="text-align: left"><strong>求职意向</strong></td>
+<td style="text-align: center">软件开发工程师</td>
+<td style="text-align: left"><strong>邮箱</strong></td>
+<td style="text-align: center">colbrze430@gmail</td>
+</tr>
+</tbody>
+</table>
 
 ## 个人能力：
 
