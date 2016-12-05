@@ -1,3 +1,10 @@
+---
+layout: post
+title: 个人简历
+description: 我的个人简历2016
+keywords: 简历
+---
+
 # 个人简历
 -----
 ## 个人简介：
