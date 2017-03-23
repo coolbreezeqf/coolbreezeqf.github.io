@@ -12,3 +12,4 @@ github_username:  jekyll
 
 # Build settings
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+theme: jekyll-theme-slate
